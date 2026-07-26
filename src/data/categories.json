@@ -1,0 +1,7 @@
+[
+  { "id": "cricket", "label": "Cricket", "icon": "cricket", "variant": "cricket", "href": "/cricket" },
+  { "id": "football", "label": "Football", "icon": "football", "variant": "football", "href": "/football" },
+  { "id": "tennis", "label": "Tennis", "icon": "tennis", "variant": "tennis", "href": "/tennis" },
+  { "id": "horse-racing", "label": "Horse Racing", "icon": "horseracing", "variant": "horseracing", "href": "/horse-racing" },
+  { "id": "greyhound", "label": "Greyhound", "icon": "greyhound", "variant": "greyhound", "href": "/greyhound-racing" }
+]

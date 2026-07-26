@@ -1,0 +1,141 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-5);
+}
+
+.heroCard {
+  position: relative;
+  min-height: 320px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-card);
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  animation: kenBurns 16s ease-out forwards;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 12, 30, 0.85) 20%,
+    rgba(10, 12, 30, 0.15) 80%
+  );
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-8);
+  max-width: 420px;
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.01em;
+}
+
+.description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.cta {
+  align-self: flex-start;
+  margin-top: var(--space-2);
+}
+
+.sideCards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.sideCards > div {
+  flex: 1;
+  display: flex;
+}
+
+.sideCard {
+  position: relative;
+  flex: 1;
+  min-height: 148px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  transition: transform 0.25s ease;
+}
+
+.sideCard:hover {
+  transform: translateY(-3px);
+}
+
+.sideCardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 12, 30, 0.3) 0%,
+    rgba(10, 12, 30, 0.85) 100%
+  );
+}
+
+.sideCardContent {
+  position: relative;
+  z-index: 1;
+  align-self: flex-end;
+  padding: var(--space-5);
+}
+
+.sideCardTitle {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-1);
+}
+
+.sideCardSubtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .sideCards {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroContent {
+    padding: var(--space-5);
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: var(--font-size-xl);
+  }
+
+  .sideCards {
+    flex-direction: column;
+  }
+}

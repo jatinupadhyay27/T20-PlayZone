@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "id": "ipl-cricket",
+    "badge": "HOT NOW",
+    "title": "IPL CRICKET",
+    "description": "T20 Play Zone cover all IPL Matches throughout the season. Best IPL betting site in India.",
+    "ctaLabel": "Play Now",
+    "ctaHref": "/cricket",
+    "image": "/images/hero-cricket.jpg"
+  },
+  "sidePromoCards": [
+    {
+      "id": "evolution-live",
+      "title": "Evolution Live",
+      "subtitle": "Real dealers, real stakes, 24/7",
+      "image": "/images/promo-evolution-live.jpg"
+    },
+    {
+      "id": "sportsbook",
+      "title": "Sportsbook",
+      "subtitle": "Top odds for every major league",
+      "image": "/images/promo-sportsbook.jpg"
+    }
+  ]
+}

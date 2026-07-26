@@ -1,0 +1,81 @@
+/* Design tokens derived from the "T20 Play Zone" Figma landing page (node 4907:399). */
+:root {
+  /* Brand */
+  --color-primary: #e8272c;
+  --color-primary-dark: #c41e23;
+  --color-primary-light: #ff4d52;
+  --color-accent-green: #25d366;
+  --color-accent-green-dark: #1fa855;
+
+  /* Category gradients */
+  --gradient-cricket: linear-gradient(90deg, #e8272c 0%, #f2b9ba 100%);
+  --gradient-football: linear-gradient(90deg, #1c9d94 0%, #d6efec 100%);
+  --gradient-tennis: linear-gradient(90deg, #e0b93a 0%, #f3e6bd 100%);
+  --gradient-horseracing: linear-gradient(90deg, #1f9d5c 0%, #cdeddc 100%);
+  --gradient-greyhound: linear-gradient(90deg, #3a5fd9 0%, #cdd7f5 100%);
+
+  /* Surfaces */
+  --color-bg-body-start: #0d1440;
+  --color-bg-body-end: #1a2a8f;
+  --color-bg-header: #0a0a10;
+  --color-bg-sidebar: #0d1440;
+  --color-bg-card: #10173f;
+  --color-bg-card-alt: #141c4a;
+  --color-bg-table-row: #0f1436;
+  --color-bg-table-row-alt: #141a42;
+  --color-bg-sidebar-active: #f2f2f5;
+
+  /* Text */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b7bcdb;
+  --color-text-muted: #8890b8;
+  --color-text-on-light: #14172c;
+  --color-text-live: #25d366;
+
+  /* Borders */
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-card: rgba(255, 255, 255, 0.12);
+
+  /* Typography */
+  --font-family-base:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.375rem;
+  --font-size-xl: 1.75rem;
+  --font-size-2xl: 2.25rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --shadow-button: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --header-height: 72px;
+  --container-max-width: 1440px;
+}

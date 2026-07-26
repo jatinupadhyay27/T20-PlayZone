@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.heading {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-1);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-card);
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+  font-family: inherit;
+  font-size: var(--font-size-sm);
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-accent-green);
+  box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.15);
+}
+
+.confirmation {
+  font-size: var(--font-size-sm);
+  color: var(--color-accent-green);
+}
+
+.errorText {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary-light);
+}
+
+.fadeIn {
+  animation: pageFadeIn 0.3s ease both;
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: currentColor;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

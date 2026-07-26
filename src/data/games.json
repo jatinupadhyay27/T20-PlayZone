@@ -1,0 +1,28 @@
+{
+  "casinoGames": [
+    { "id": "cg1", "title": "Teen Patti", "provider": "Ezugi", "thumbnail": "/images/games/teen-patti.jpg" },
+    { "id": "cg2", "title": "Andar Bahar", "provider": "Ezugi", "thumbnail": "/images/games/andar-bahar.jpg" },
+    { "id": "cg3", "title": "Roulette", "provider": "Evolution", "thumbnail": "/images/games/roulette.jpg" },
+    { "id": "cg4", "title": "Blackjack", "provider": "Evolution", "thumbnail": "/images/games/blackjack.jpg" },
+    { "id": "cg5", "title": "Baccarat", "provider": "Evolution", "thumbnail": "/images/games/baccarat.jpg" },
+    { "id": "cg6", "title": "Dragon Tiger", "provider": "Ezugi", "thumbnail": "/images/games/dragon-tiger.jpg" },
+    { "id": "cg7", "title": "Poker", "provider": "Evolution", "thumbnail": "/images/games/poker.jpg" },
+    { "id": "cg8", "title": "Lightning Roulette", "provider": "Evolution", "thumbnail": "/images/games/lightning-roulette.jpg" }
+  ],
+  "popularGames": [
+    { "id": "pg1", "title": "Aviator", "provider": "Spribe", "thumbnail": "/images/games/aviator.jpg" },
+    { "id": "pg2", "title": "Mines", "provider": "Spribe", "thumbnail": "/images/games/mines.jpg" },
+    { "id": "pg3", "title": "Plinko", "provider": "Spribe", "thumbnail": "/images/games/plinko.jpg" },
+    { "id": "pg4", "title": "JetX", "provider": "SmartSoft", "thumbnail": "/images/games/jetx.jpg" }
+  ],
+  "cardGames": [
+    { "id": "icg1", "label": "Poker", "icon": "poker" },
+    { "id": "icg2", "label": "Rummy", "icon": "rummy" },
+    { "id": "icg3", "label": "Teen Patti", "icon": "teenpatti" },
+    { "id": "icg4", "label": "Andar Bahar", "icon": "andarbahar" },
+    { "id": "icg5", "label": "Blackjack", "icon": "blackjack" },
+    { "id": "icg6", "label": "Baccarat", "icon": "baccarat" },
+    { "id": "icg7", "label": "Dragon Tiger", "icon": "dragontiger" },
+    { "id": "icg8", "label": "Callbreak", "icon": "callbreak" }
+  ]
+}

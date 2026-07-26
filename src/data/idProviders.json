@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ip1",
+    "name": "Priority Support Desk",
+    "tagline": "Fastest response, general queries & ID setup",
+    "responseTime": "Usually replies within 5 minutes"
+  },
+  {
+    "id": "ip2",
+    "name": "Cricket & Sportsbook Desk",
+    "tagline": "IPL, international cricket & sportsbook odds",
+    "responseTime": "Usually replies within 10 minutes"
+  },
+  {
+    "id": "ip3",
+    "name": "Live Casino Desk",
+    "tagline": "Evolution & Ezugi live tables, VIP limits",
+    "responseTime": "Usually replies within 10 minutes"
+  }
+]

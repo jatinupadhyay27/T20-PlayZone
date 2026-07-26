@@ -1,0 +1,41 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  max-width: var(--container-max-width);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  padding: var(--space-6) var(--space-8);
+}
+
+.pageInner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+@media (max-width: 1024px) {
+  .content {
+    padding: var(--space-5);
+  }
+}
+
+@media (max-width: 640px) {
+  .content {
+    padding: var(--space-4);
+  }
+
+  .pageInner {
+    gap: var(--space-6);
+  }
+}

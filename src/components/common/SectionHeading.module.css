@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+}
+
+.title {
+  position: relative;
+  padding-left: var(--space-4);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  bottom: 2px;
+  width: 4px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+}
+
+.action {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+[
+  { "id": "es1", "title": "CS2", "provider": "IEM & ESL", "thumbnail": "/images/games/cs2.jpg" },
+  { "id": "es2", "title": "Valorant", "provider": "VCT Circuit", "thumbnail": "/images/games/valorant.jpg" },
+  { "id": "es3", "title": "Dota 2", "provider": "The International", "thumbnail": "/images/games/dota2.jpg" },
+  { "id": "es4", "title": "PUBG Mobile", "provider": "PMPL", "thumbnail": "/images/games/pubg-mobile.jpg" },
+  { "id": "es5", "title": "League of Legends", "provider": "LEC & LCS", "thumbnail": "/images/games/lol.jpg" },
+  { "id": "es6", "title": "Free Fire", "provider": "FFWS", "thumbnail": "/images/games/free-fire.jpg" }
+]

@@ -1,0 +1,24 @@
+{
+  "navLinks": [
+    { "id": "home", "label": "Home", "href": "/" },
+    { "id": "esports", "label": "E-Sports", "href": "/e-sports" },
+    { "id": "id-providers", "label": "ID Providers", "href": "/id-providers" },
+    { "id": "t20-play-zone", "label": "T20 Play Zone", "href": "/t20-play-zone" },
+    { "id": "about", "label": "About Us", "href": "/about" },
+    { "id": "contact", "label": "Contact Us", "href": "/contact" }
+  ],
+  "sidebarItems": [
+    { "id": "favourites", "label": "Favourites", "icon": "star", "href": "/favourites" },
+    { "id": "kabaddi", "label": "Kabaddi", "icon": "kabaddi", "href": "/kabaddi" },
+    { "id": "cricket", "label": "Cricket", "icon": "cricket", "href": "/cricket" },
+    { "id": "football", "label": "Football", "icon": "football", "href": "/football" },
+    { "id": "tennis", "label": "Tennis", "icon": "tennis", "href": "/tennis" },
+    { "id": "horse-racing", "label": "Horse Racing", "icon": "horseracing", "href": "/horse-racing" },
+    { "id": "greyhound-racing", "label": "Greyhound Racing", "icon": "greyhound", "href": "/greyhound-racing" },
+    { "id": "indian-card-games", "label": "Indian Card Games", "icon": "cards", "href": "/indian-card-games" },
+    { "id": "sportsbook", "label": "Sportsbook", "icon": "sportsbook", "href": "/sportsbook" },
+    { "id": "live-casino", "label": "Live Casino", "icon": "casino", "href": "/live-casino" },
+    { "id": "binary", "label": "Binary", "icon": "binary", "href": "/binary" },
+    { "id": "slots-games", "label": "Slots Games", "icon": "slots", "href": "/slots-games" }
+  ]
+}

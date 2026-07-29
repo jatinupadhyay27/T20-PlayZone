@@ -1,5 +1,7 @@
 export type MatchStatus = 'live' | 'upcoming' | 'completed';
 
+export type SupportedSport = 'cricket' | 'football' | 'tennis';
+
 export interface LiveMatch {
   id: string;
   fixture: string;

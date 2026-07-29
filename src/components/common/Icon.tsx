@@ -10,6 +10,7 @@ import {
   FaSlidersH,
   FaVideo,
   FaBars,
+  FaSyncAlt,
 } from 'react-icons/fa';
 import { GiCricketBat, GiCardAceSpades, GiRunningShoe } from 'react-icons/gi';
 import { MdSportsCricket, MdSportsHandball } from 'react-icons/md';
@@ -30,6 +31,7 @@ const ICON_MAP: Record<string, IconType> = {
   filter: FaSlidersH,
   live: FaVideo,
   menu: FaBars,
+  refresh: FaSyncAlt,
 };
 
 interface IconProps {

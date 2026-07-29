@@ -2,6 +2,7 @@ import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
 import Reveal from '@/components/common/Reveal';
 import LiveMatches from '@/features/liveMatches/LiveMatches';
+import { openWhatsAppChat } from '@/services/whatsappService';
 import styles from './T20PlayZonePage.module.css';
 
 export default function T20PlayZonePage() {
@@ -23,7 +24,14 @@ export default function T20PlayZonePage() {
             series in one place. Follow live matches below or get your ID
             to start betting.
           </p>
-          <Button variant="secondary">Get ID</Button>
+          <Button
+            variant="secondary"
+            onClick={() =>
+              openWhatsAppChat(undefined, "Hi! I'd like to get ID. Could you help me get started?")
+            }
+          >
+            Get ID
+          </Button>
         </Reveal>
       </section>
 

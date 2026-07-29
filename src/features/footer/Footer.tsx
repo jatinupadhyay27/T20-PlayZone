@@ -1,4 +1,6 @@
 import ContactForm from '@/features/contact/ContactForm';
+import { CONTACT_RECIPIENT_EMAIL } from '@/constants/email';
+import { WHATSAPP_PHONE_NUMBER } from '@/constants/whatsapp';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -11,8 +13,8 @@ export default function Footer() {
             Questions about IPL Cricket, live casino tables, or getting your
             ID? Send us a message and our team will get back to you.
           </p>
-          <p className={styles.contactLine}>support@t20playzone.example</p>
-          <p className={styles.contactLine}>+91 70146 77238</p>
+          <p className={styles.contactLine}>{CONTACT_RECIPIENT_EMAIL}</p>
+          <p className={styles.contactLine}>+{WHATSAPP_PHONE_NUMBER}</p>
         </div>
 
         <ContactForm />

@@ -1,4 +1,5 @@
 import heroData from '@/data/hero.json';
+import { openWhatsAppChat } from '@/services/whatsappService';
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
 import Card from '@/components/ui/Card';
@@ -22,7 +23,16 @@ export default function Hero() {
           </Badge>
           <h1 className={styles.title}>{hero.title}</h1>
           <p className={styles.description}>{hero.description}</p>
-          <Button variant="secondary" className={styles.cta}>
+          <Button
+            variant="secondary"
+            className={styles.cta}
+            onClick={() =>
+              openWhatsAppChat(
+                undefined,
+                `Hi! I'm interested in ${hero.title}. Could you share the available options and help me get started?`,
+              )
+            }
+          >
             {hero.ctaLabel}
           </Button>
         </Reveal>

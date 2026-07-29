@@ -1,3 +1,34 @@
+.sportTabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.sportTab {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border-card);
+  background: var(--color-bg-card);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.sportTab:hover {
+  background: var(--color-bg-card-alt);
+}
+
+.sportTabActive {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-text-primary);
+}
+
 .group {
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -21,12 +52,59 @@
   font-size: var(--font-size-sm);
 }
 
+.groupHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
 .groupTag {
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semibold);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   opacity: 0.85;
+}
+
+.staleBanner {
+  padding: var(--space-2) var(--space-5);
+  background: rgba(255, 193, 7, 0.12);
+  border-bottom: 1px solid var(--color-border-subtle);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+}
+
+.refreshButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.refreshButton:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.refreshButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.spinning {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .table {
@@ -74,6 +152,73 @@
 }
 
 .schedule {
+  color: var(--color-text-secondary);
+}
+
+.empty {
+  padding: var(--space-6) var(--space-5);
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-card);
+  background: var(--color-bg-card);
+}
+
+.retryLink {
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--color-accent-green);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  border-top: 1px solid var(--color-border-subtle);
+  background: var(--color-bg-card);
+}
+
+.pageButton {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-card);
+  background: var(--color-bg-card-alt);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+}
+
+.pageButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pageButton:not(:disabled):hover {
+  background: var(--color-primary);
+}
+
+.pageIndicator {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.attribution {
+  display: inline-block;
+  margin-top: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.attribution:hover {
   color: var(--color-text-secondary);
 }
 

@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks';
 import { toggleSidebar } from '@/store/slices/navigationSlice';
+import { openWhatsAppChat } from '@/services/whatsappService';
 import Button from '@/components/ui/Button';
 import Icon from '@/components/common/Icon';
 import styles from './Header.module.css';
@@ -43,8 +44,22 @@ export default function Header() {
       </nav>
 
       <div className={styles.actions}>
-        <Button variant="primary">Login</Button>
-        <Button variant="secondary">Get ID</Button>
+        <Button
+          variant="primary"
+          onClick={() =>
+            openWhatsAppChat(undefined, "Hi! I'd like to log in to my T20 Play Zone account. Could you help me?")
+          }
+        >
+          Login
+        </Button>
+        <Button
+          variant="secondary"
+          onClick={() =>
+            openWhatsAppChat(undefined, "Hi! I'd like to get ID. Could you help me get started?")
+          }
+        >
+          Get ID
+        </Button>
       </div>
     </header>
   );

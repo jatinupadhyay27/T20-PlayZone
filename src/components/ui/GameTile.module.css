@@ -1,5 +1,10 @@
 .tile {
   display: block;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
   border-radius: var(--radius-md);
   overflow: hidden;
   background: var(--color-bg-card);

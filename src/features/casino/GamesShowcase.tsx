@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks';
 import { loadGamesCatalogue } from '@/store/slices/gamesSlice';
+import { openWhatsAppChat } from '@/services/whatsappService';
 import SectionHeading from '@/components/common/SectionHeading';
 import GameTile from '@/components/ui/GameTile';
 import Icon from '@/components/common/Icon';
@@ -51,9 +52,20 @@ export default function GamesShowcase() {
         <ul className={styles.iconGrid}>
           {cardGames.map((card, index) => (
             <li key={card.id}>
-              <Reveal delay={(index % STAGGER_MAX) * STAGGER_STEP} className={styles.iconTile}>
-                <Icon name="cards" size={24} />
-                <span>{card.label}</span>
+              <Reveal delay={(index % STAGGER_MAX) * STAGGER_STEP}>
+                <button
+                  type="button"
+                  className={styles.iconTile}
+                  onClick={() =>
+                    openWhatsAppChat(
+                      undefined,
+                      `Hi! I'm interested in playing ${card.label}. Could you share the available options and help me get started?`,
+                    )
+                  }
+                >
+                  <Icon name="cards" size={24} />
+                  <span>{card.label}</span>
+                </button>
               </Reveal>
             </li>
           ))}

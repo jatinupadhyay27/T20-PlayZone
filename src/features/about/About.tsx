@@ -16,7 +16,7 @@ export default function About() {
       </Reveal>
       <Reveal delay={150} className={styles.imageWrapper}>
         <img
-          src="/images/about-t20-playzone.jpg"
+          src="/images/about-t20-playzone.png"
           alt="Cricket stadium filled with fans"
           className={styles.image}
         />

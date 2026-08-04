@@ -35,13 +35,18 @@
 }
 
 .brand {
-  flex-shrink: 1;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
-  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background: #ffffff;
+}
+
+.brandLogo {
+  display: block;
+  height: 44px;
+  width: auto;
 }
 
 .nav {
@@ -131,7 +136,11 @@
 
 @media (max-width: 400px) {
   .brand {
-    font-size: var(--font-size-sm);
+    padding: 2px var(--space-2);
+  }
+
+  .brandLogo {
+    height: 32px;
   }
 
   .actions :global(.button) {

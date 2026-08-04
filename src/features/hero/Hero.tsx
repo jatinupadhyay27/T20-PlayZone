@@ -41,10 +41,11 @@ export default function Hero() {
       <div className={styles.sideCards}>
         {sidePromoCards.map((card, index) => (
           <Reveal key={card.id} delay={index * 120}>
-            <Card
-              className={styles.sideCard}
-              style={{ backgroundImage: `url(${card.image})` }}
-            >
+            <Card className={styles.sideCard}>
+              <div
+                className={styles.sideCardImage}
+                style={{ backgroundImage: `url(${card.image})` }}
+              />
               <div className={styles.sideCardOverlay} />
               <div className={styles.sideCardContent}>
                 <h3 className={styles.sideCardTitle}>{card.title}</h3>

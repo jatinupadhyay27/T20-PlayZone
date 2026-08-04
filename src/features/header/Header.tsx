@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '@/hooks/reduxHooks';
 import { toggleSidebar } from '@/store/slices/navigationSlice';
 import { openWhatsAppChat } from '@/services/whatsappService';
@@ -23,7 +23,13 @@ export default function Header() {
         <Icon name="menu" size={18} />
       </button>
 
-      <div className={styles.brand}>T20 Play Zone</div>
+      <Link to="/" className={styles.brand} aria-label="T20 Play Zone home">
+        <img
+          src="/images/brand/t20playzone-logo-horizontal.png"
+          alt="T20 Play Zone"
+          className={styles.brandLogo}
+        />
+      </Link>
 
       <nav className={styles.nav} aria-label="Primary">
         <ul className={styles.navList}>

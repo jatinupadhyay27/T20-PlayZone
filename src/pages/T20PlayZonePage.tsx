@@ -11,7 +11,7 @@ export default function T20PlayZonePage() {
       <section className={styles.banner} aria-label="T20 Play Zone cricket hub">
         <div
           className={styles.bannerImage}
-          style={{ backgroundImage: 'url(/images/hero-cricket.jpg)' }}
+          style={{ backgroundImage: 'url(/images/hero-cricket.png)' }}
         />
         <div className={styles.overlay} />
         <Reveal className={styles.content}>

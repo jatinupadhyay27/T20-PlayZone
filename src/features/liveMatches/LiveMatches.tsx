@@ -181,9 +181,9 @@ export default function LiveMatches() {
         </Reveal>
       ) : null}
 
-      <a href="https://sportscore.com" target="_blank" rel="noopener noreferrer" className={styles.attribution}>
+      {/* <a href="https://sportscore.com" target="_blank" rel="noopener noreferrer" className={styles.attribution}>
         Powered by SportScore
-      </a>
+      </a> */}
     </section>
   );
 }

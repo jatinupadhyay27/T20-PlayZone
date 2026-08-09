@@ -7,6 +7,10 @@
   --color-accent-green: #25d366;
   --color-accent-green-dark: #1fa855;
 
+  /* Offer marquee */
+  --gradient-offer: linear-gradient(90deg, #ffb703 0%, #ff8c00 50%, #ffb703 100%);
+  --color-offer-text: #14172c;
+
   /* Category gradients */
   --gradient-cricket: linear-gradient(90deg, #e8272c 0%, #f2b9ba 100%);
   --gradient-football: linear-gradient(90deg, #1c9d94 0%, #d6efec 100%);
